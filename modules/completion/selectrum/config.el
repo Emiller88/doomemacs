@@ -83,9 +83,7 @@
 
 (use-package! consult-xref
   :commands (consult-xref)
-  :init
-  (setq xref-show-xrefs-function #'consult-xref
-        xref-show-definitions-function #'consult-xref))
+  :init (setq xref-show-xrefs-function #'consult-xref))
 
 (use-package! consult-flycheck
   :when (featurep! :checkers syntax)
