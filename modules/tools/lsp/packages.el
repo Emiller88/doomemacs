@@ -10,4 +10,6 @@
   (when (featurep! :completion ivy)
     (package! lsp-ivy :pin "515e5977b3d1f6cb521984f084868f28efd47e72"))
   (when (featurep! :completion helm)
-    (package! helm-lsp :pin "74a02f89088484c42ffc184ece338b73abd4d6f6")))
+    (package! helm-lsp :pin "74a02f89088484c42ffc184ece338b73abd4d6f6"))
+  (when (featurep! :completion selectrum)
+    (package! consult-lsp :pin "ed3cfd2e67fc5117819c0c739814780bb4c2d716")))
