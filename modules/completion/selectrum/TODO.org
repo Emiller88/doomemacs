@@ -34,4 +34,3 @@ In selectrum, it leads to =/foo/bar!=
 ** TODO bind =consult-lsp-diagnostics= to something?
 ** TODO test out bibtex-actions, check if more configuration should be added
 https://github.com/bdarcus/bibtex-actions
- .
