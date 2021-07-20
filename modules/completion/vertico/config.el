@@ -107,7 +107,10 @@
           (which-key--show-keymap "Embark" map nil nil 'no-paging)
           #'which-key--hide-popup-ignore-command)
         embark-become-indicator embark-action-indicator)
-  (map! "C-;"               #'embark-act  ; to be moved to :config default if accepted
+  (map! :map term-raw-map   :after term
+        [menu]              #'execute-extended-command)
+  (map! [menu]              #'embark-act
+        "C-;"               #'embark-act          ; to be moved to :config default if accepted
         :leader
         :desc "Actions" "a" #'embark-act) ; to be moved to :config default if accepted
   (map! :map minibuffer-local-map

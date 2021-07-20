@@ -1,8 +1,8 @@
 * PROJ Design Decisions
 ** TODO Bind =consult-lsp-diagnostics= to something?
 ** TODO Finalize =embark-act= keybindings
-They are currently set to =C-;= and =<leader> a=. The motivation for this is as
-follows:
+They are currently set to =C-;=, =<leader> a= and =<menu>=. The motivation for
+this is as follows:
 *** =C-;=
 Least intrusive key-chord type binding I could find. Doesn't interfere with
 other keybindings for the most part (unlike =C-o= which clashes for in
@@ -35,7 +35,15 @@ case for why this should be an exception:
   installed independently, so if you find it sufficiently useful you could also
   have a stripped down version of the config in doom core that is just used for
   on-buffer actions.
-*** We also might want to add keybinidngs for =embark-dwim=
+*** =<menu>=
+Quote from ~embark~'s README:
+#+begin_quote
+This package provides a sort of right-click contextual menu for Emacs
+#+end_quote
+
+In other applications, =<menu>= almost always triggers the list of contextual
+actions at point, which remarkably fits ~embark~'s popup commands.
+*** We also might want to add keybindings for =embark-dwim=
 ** TODO =SPC s s= and =SPC s S= ~:sw~ ?
 There isn't really a vertico/consult analogue to ~swiper-isearch~, ~consult-isearch~
 does something else (give you previously used isearch search terms). Bound to
